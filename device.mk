@@ -17,6 +17,12 @@ PRODUCT_PACKAGES += \
     NoCutoutOverlay \
     NotchBarKiller
 
+# Soong namespaces
+PRODUCT_SOONG_NAMESPACES += \
+    $(LOCAL_PATH) \
+    hardware/google/interfaces \
+    hardware/google/pixel
+
 # AID/fs configs
 PRODUCT_PACKAGES += \
     fs_config_files
@@ -318,7 +324,7 @@ PRODUCT_DEX_PREOPT_DEFAULT_COMPILER_FILTER := everything
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power-service-qti
+    android.hardware.power-service.xiaomi_trinket-libperfmgr
 
 # Perf
 PRODUCT_PACKAGES += \
