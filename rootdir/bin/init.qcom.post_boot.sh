@@ -3099,10 +3099,10 @@ case "$target" in
             echo 4 > /sys/devices/system/cpu/cpu4/core_ctl/task_thres
 
             # Setting b.L scheduler parameters
-            echo 67 > /proc/sys/kernel/sched_downmigrate
-            echo 77 > /proc/sys/kernel/sched_upmigrate
-            echo 85 > /proc/sys/kernel/sched_group_downmigrate
-            echo 100 > /proc/sys/kernel/sched_group_upmigrate
+            echo 85 > /proc/sys/kernel/sched_downmigrate
+            echo 85 > /proc/sys/kernel/sched_upmigrate
+            echo 25 > /proc/sys/kernel/sched_downmigrate_boosted
+            echo 25 > /proc/sys/kernel/sched_upmigrate_boosted
 
             # cpuset settings
             echo 0-2     > /dev/cpuset/background/cpus
@@ -3113,15 +3113,15 @@ case "$target" in
 
             # configure governor settings for little cluster
             echo "schedutil" > /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
-            echo 0 > /sys/devices/system/cpu/cpu0/cpufreq/schedutil/up_rate_limit_us
-            echo 0 > /sys/devices/system/cpu/cpu0/cpufreq/schedutil/down_rate_limit_us
-            echo 1305600 > /sys/devices/system/cpu/cpu0/cpufreq/schedutil/hispeed_freq
-            echo 614400 > /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq
+            echo 500 > /sys/devices/system/cpu/cpu0/cpufreq/schedutil/up_rate_limit_us
+            echo 20000 > /sys/devices/system/cpu/cpu0/cpufreq/schedutil/down_rate_limit_us
+            echo 1420800 > /sys/devices/system/cpu/cpu0/cpufreq/schedutil/hispeed_freq
+            echo 864000 > /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq
 
             # configure governor settings for big cluster
             echo "schedutil" > /sys/devices/system/cpu/cpu4/cpufreq/scaling_governor
-            echo 0 > /sys/devices/system/cpu/cpu0/cpufreq/schedutil/up_rate_limit_us
-            echo 0 > /sys/devices/system/cpu/cpu0/cpufreq/schedutil/down_rate_limit_us
+            echo 500 > /sys/devices/system/cpu/cpu4/cpufreq/schedutil/up_rate_limit_us
+            echo 20000 > /sys/devices/system/cpu/cpu4/cpufreq/schedutil/down_rate_limit_us
             echo 1401600 > /sys/devices/system/cpu/cpu4/cpufreq/schedutil/hispeed_freq
             echo 1056000 > /sys/devices/system/cpu/cpu4/cpufreq/scaling_min_freq
 
