@@ -324,8 +324,7 @@ PRODUCT_DEX_PREOPT_DEFAULT_COMPILER_FILTER := everything
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power-service.xiaomi_trinket-libperfmgr \
-    android.hardware.power.stats@1.0-service.xiaomi_trinket
+    android.hardware.power-service.xiaomi_trinket-libperfmgr
 
 # Perf
 PRODUCT_COPY_FILES += \
