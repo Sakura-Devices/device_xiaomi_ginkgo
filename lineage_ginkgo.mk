@@ -30,7 +30,7 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Sakura Flags
 TARGET_BOOT_ANIMATION_RES := 1080
-SAKURA_OFFICIAL := false
+SAKURA_OFFICIAL := true
 SAKURA_MAINTAINER := dsashwin & whyredFire
 
 # Device identifier
