@@ -1,14 +1,37 @@
-[   {
+[
+    {
         "remote": "github",
-        "repository": "whyredfire/android_kernel_xiaomi_ginkgo",
-        "target_path": "kernel/xiaomi/ginkgo",
-        "branch": "eleven"
+        "repository": "ArrowOS/android_hardware_qcom_audio",
+        "target_path": "hardware/qcom-caf/sm8150/audio",
+        "branch": "arrow-11.0-caf-sm8150"
     },
     {
         "remote": "github",
-        "repository": "whyredfire/android_vendor_xiaomi_ginkgo",
-        "target_path": "vendor/xiaomi/ginkgo",
-        "branch": "eleven"
+        "repository": "ArrowOS/android_hardware_qcom_media",
+        "target_path": "hardware/qcom-caf/sm8150/media",
+        "branch": "arrow-11.0-caf-sm8150"
+    }, 
+    {
+        "remote": "github",
+        "repository": "ArrowOS/android_hardware_qcom_display",
+        "target_path": "hardware/qcom-caf/sm8150/display",
+        "branch": "arrow-11.0-caf-sm8150"
+    },
+    {
+        "remote": "github",
+        "repository": "ArrowOS/android_vendor_qcom_opensource_power",
+        "target_path": "vendor/qcom/opensource/power",
+        "branch": "arrow-11.0"
+    },
+    {
+        "remote": "github",
+        "repository": "ArrowOS-Devices/android_kernel_xiaomi_ginkgo",
+        "target_path": "kernel/xiaomi/ginkgo",
+        "branch": "arrow-11.0"
+    },  
+    {
+        "repository": "vendor_xiaomi_ginkgo",
+        "target_path": "vendor/xiaomi/ginkgo"
     },
     {
         "remote": "github",
@@ -21,5 +44,5 @@
         "repository":   "ThankYouMario/proprietary_vendor_qcom_sdclang",
         "target_path":  "prebuilts/clang/host/linux-x86/clang-sdllvm",
         "branch":       "ruby"
-    }    
+    } 
 ]
