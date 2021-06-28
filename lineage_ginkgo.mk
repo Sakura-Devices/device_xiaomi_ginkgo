@@ -33,6 +33,7 @@ TARGET_BOOT_ANIMATION_RES := 1080
 SAKURA_OFFICIAL := true
 SAKURA_MAINTAINER := Ashwin&Karan
 TARGET_GAPPS_ARCH := arm64
+SAKURA_BUILD_TYPE=gapps
 
 # Device identifier
 PRODUCT_NAME := lineage_ginkgo
