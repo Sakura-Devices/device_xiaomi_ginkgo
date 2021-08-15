@@ -39,6 +39,10 @@ persist.vendor.ims.disableQXDMLogs=1
 iorapd.readahead.enable=true
 ro.iorapd.enable=true
 
+# Display
+persist.lcd.cabc_mode=1
+persist.lcd.hbm_mode=0
+
 #Display 
 ro.surface_flinger.supports_background_blur=1
 persist.sys.sf.disable_blurs=1
